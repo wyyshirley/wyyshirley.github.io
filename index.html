@@ -2,64 +2,110 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>王顗媛的自我介紹</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Bootstrap CDN -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> 
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		<title>王顗媛的自我介紹</title>
 	</head>
 	<body>
 		<header id="begin">
 			<figure>
-				<img src="照片.jpg" width="240" style="float: right;" alt="照片">
+				<img src="照片.jpg" class="img-thumbnail " width="240" style="float: right;" alt="照片">
 			</figure>
 		</header>
-		<nav>
-			<ul>
-				<li><a href="#family">家庭背景</a></li>
-				<li><a href="#China life">大陸生活</a></li>
-				<li><a href="#school">求學歷程</a></li>
-				<li><a href="#high school">高中生活</a></li>
-				<li><a href="#work">打工經歷</a></li>
-				<li><a href="#collage">大學生活</a></li>
-				<li><a href="#hobby">興趣愛好</a></li>
-			</ul>
+		<nav class="navbar navbar-dark navbar-expand-md" style="background-color:Thistle">
+			<div class="container-fluid>
+				<span class="navbar-text">Welcome!</span>
+				<a class="navbar-brand" href="#">
+					<img src="皮丘1.jpg" width="80px">王顗媛 Shirley Wang</a><img src="皮丘.jpg" width="80px">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbar1">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item active"><a class="nav-link" href="#family">家庭背景</a><li>
+						<li class="nav-item"><a class="nav-link" href="#school">求學歷程</a></li>
+						<li class="nav-item"><a class="nav-link" href="#work">打工經歷</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">生活</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#China life">大陸生活</a>
+								<a class="dropdown-item" href="#high school">高中生活</a>
+								<a class="dropdown-item" href="#collage">大學生活</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
+		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+				<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+				<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="文心藝所.jpg" class="d-block w-100" alt="文心藝所">
+					<div class="carousel-caption d-none d-md-block">
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="學校.jpg" class="d-block w-100" alt="學校">
+					<div class="carousel-caption d-none d-md-block">
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="新北耶誕城.jpg" class="d-block w-100" alt="新北耶誕城">
+					<div class="carousel-caption d-none d-md-block">
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#myCaousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+				<span class="visually-hidden">Previous</span></a>
+			<a class="carousel-control-next" href="#myCaousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+				<span class="visually-hidden">Next</span></a>
+		</div>
 		<section id="family">
-			<h2>家庭背景：</h2>
+			<h2><b>家庭背景：</b></h2>
 			<p>  我叫王顗媛，在台北市出生及長大，有一個姊姊，比我年紀大了一歲半，爸爸是台灣人，媽媽是中國人，常常在暑假的時候會去大陸住外婆家生活一陣子。我的生日是九月二號，星座是處女座，因為晚一天出生，所以多等了一年才能入學，也因此，我是同屆裡年紀最大的學生，也將是第一個成年的學生。因為名字中的「顗」字不常見，很多人甚至連老師都唸錯，讓我多了許多綽號，例如「凱」媛、「顓」媛等。我的爸爸說為了找到一個大家都不會唸的字可是翻遍了整本字典呢。可能是因為遺傳，我和姐姐都長得特別矮，也因此成為了我的特色。</p>
 			<p><a href="#begin">回到最前</a></p>
 		</section>
 		
 		<section id="China life">
-			<h2>大陸生活：</h2>
+			<h2><b>大陸生活：</b></h2>
 			<p> 每次等到暑假時都會特別期待回外婆家生活，比起台北城市的喧囂吵雜，更喜歡鄉下樸實無華的生活，雖然生活上確實比都市來說有許多不便，也讓我這個都市生長的小孩很不習慣，但是能和表姊表妹玩在一起卻讓我累積了許多刻骨銘心的回憶，也為我的童年添增了不少色彩。以前都是搭飛機，但最近幾次回去都是搭貨輪，有房間有床，只要睡一覺就可以發現從基隆一眨眼的時間就到了廈門。但疫情也影響了我們大家的生活，已經很多年沒有回去了，也很擔心親戚們的健康狀態。</p>
 			<p><a href="#begin">回到最前</a></p>
 		</section>
 		
 		<section id="school">
-			<h2>求學歷程：</h2>
+			<h2><b>求學歷程：</b></h2>
 			<p>  我從小就讀升學率極高的學區－－中正區，幼稚園時讀東門附幼的蜜蜂班，從小活潑好動的個性也讓我發現我的運動細胞在女生裡面算是不錯的，喜歡打球跟跑步，但個子矮小，體力也比較差。國小就讀東門國小，從小學一年級開始補美語，但當時覺得美語幫不太上課業上的英文，所以只補到小學三年級。在小學時，發現了我對數學的熱情，也許是因為其他科目太爛，唯獨在寫數學時會相對快樂，在班上的數學成績也是名列前茅的。小學六年裡，我很認真讀書，獲選兩次市模範生，在班上也常常拿第一名，畢業時拿到柯文哲頒給我的市長獎。國中時我就讀明星國中－－中正國中，以林志玲和極高的升學率著稱，考試的難度和同儕的競爭讓我讀書讀得很辛苦，當時的成績也只能算是中上的程度，全校設有金銀銅榜，校排前五十名是金榜，五十一名到一百名是銀榜，一百零一名到一百五十名是銅榜，國中三年以來我最好的排名是一百零一名，差一點點就可以擺脫銅榜的命運，還記得我那時候超不甘心的。國一國二的時候其實還沒有讀的很拚，到了升國三的那個暑假，我開始覺悟了，發現身邊的同學都開始下定決心念書，才知道我已經沒有退路了，為了考上一所好高中，我參加了補習班開的黑馬衝刺營，整個暑假和補習班的同學們一起努力奮鬥，每天不是考試就是寫題本。當時模擬考我都考得不錯，落點大概在第三志願中山女中附近，卻在會考時失誤，勉強擠進第四志願松山高中。剛升上高一的時候，還算認真準備考試，但後來漸漸開始忙於社團與課外活動，也變得愈來愈叛逆。喜歡唱歌的我在高一時加入了流行音樂社，玩社團玩得很快樂也在社團裡交到不少朋友，但後來發現在社團裡並沒有真正學到唱歌的技巧，於是高二我加入網球社，那時候的我對社團已經沒什麼憧憬了，想說挑一個輕鬆一點的混學分。因忙碌的生活，我也學壞開始會在課堂上睡覺，漸漸變得不太愛念書了，成績開始直線下滑，而那時候的我才真正認識我自己，發現我其實很討厭讀書。高二下開始我為了考學測而發憤讀書，可最後成績還是不太理想，於是我選擇了另一條升學管道－－繁星，僥倖的我在校成績為50%，在無人競爭的情況下我獲得了本校繁星世新的資格，那時的我第一志願是廣電系，因為還沒有對未來有想法，所以後面隨便亂排序，只是想讀傳播而已。繁星放榜後，我錄取了我排的第七志願－－資訊傳播學系。</p>
 			<p><a href="#begin">回到最前</a></p>
 		</section>
 		
 		<section id="high school">
-			<h2>高中生活：</h2>
+			<h2><b>高中生活：</b></h2>
 			<p>   松山高中是HBL的常勝軍，有比賽的時候，都可以去當加油隊，在我高一去現場加油一次後，我完全愛上HBL，那種奮不顧身單純只想要贏球的心，那種熱血，充斥在整座體育館裡，贏球時很替球員們開心，輸了也會跟著難過，那種一生只有一次的感覺，只專屬於HBL。真的很高興因為讀松山高中而喜歡上看HBL，有一支能支持一輩子的隊伍讓我很高興。疫情影響了我們的青春回憶，我們這一屆尤其不幸，沒有舉辦畢業旅行，畢業典禮，連學校的特色傳統柳絮紛飛也停辦，且HBL高中三年來都沒有進過四強，於是我們稱我們自己為松山高中30屆魔咒。還好每年都會舉辦柳絮紛飛，所以在畢業以前已經看過且震撼過兩次了，但總覺得少了屬於自己畢業的那次還是留下了許多遺憾，還沒來的及跟老師、同學們告別就無聲無息的畢業了。</p>
 			<p><a href="#begin">回到最前</a></p>
 		</section>
 		
 		<section id="work">
-			<h2>打工經歷：</h2>
+			<h2><b>打工經歷：</b></h2>
 			<p>    自從繁星放榜後，就收到之前補的補習班在找輔導老師的訊息，那時的我想說繁星放榜後空閒時間很多，也想自己去賺點錢見見市面，畢竟都大學了，不該再跟父母拿錢了，於是我成為了飛哥英文國中部的輔導老師。剛進入一個新環境時的我總是笨手笨腳的，什麼都不會也老是被主管罵，雖然我常常有一股衝動想跟主管遞出辭呈，但想了想也覺得這是人生中的一種歷練，於是我常常鼓勵自己，硬撐到了現在，當我領到人生中第一份薪水的時候真的滿感動的，有種獨立自主的感覺。中間有段期間疫情很嚴重，那時有一半的同事都選擇辭職了，但我還是繼續去工作，因為我總覺得悶在家裡很難受，且沒工作就沒收入了。這份工作也持續到了大學，半工半讀確實很累，但我還是繼續堅持著，如今也有一年的資歷了。</p>
 			<p><a href="#begin">回到最前</a></p>
 		</section>
 		
 		<section id="collage">
-			<h2>大學生活：</h2>
+			<h2><b>大學生活：</b></h2>
 			<p>    我的大學生活其實跟高中沒什麼差別，因為沒有到外縣市讀書，所以一樣也是每天通勤上學，放學回家，只是排課比較自由而已。但因為通勤時間很長大約一小時，導致我通勤得滿辛苦的，課間時間也沒辦法回家休息。大一上時，我參加了系排，每週練習兩天晚上，但因為家住太遠的原因，每次回到家都太晚，於是下學期我就退出了，而決定重返我對唱歌的熱情，加入了詞曲創作社。</p>
 			<p><a href="#begin">回到最前</a></p>
 		</section>
 		
 		<section id="hobby">
-			<h2>興趣愛好：</h2>
+			<h2><b>興趣愛好：</b></h2>
 			<p>    我從小就很喜歡追劇，從小時候的三立華劇到韓劇以及陸劇我都喜歡看，特別鍾愛仙俠古裝劇，我最喜歡的劇是《陳情令》、《青雲志》、《花千骨》。我從小時候就是追星族，還記得那時候最愛的偶像團體是TFBOYS，但現在我最喜歡的明星是周杰倫，被他做音樂的熱忱以及獨特的曲風和咬字所深深吸引，就像大家所說的一樣，周杰倫代表了我的青春，只要一響起他的歌曲前奏，許多回憶都會湧上心頭。而我最喜歡他的作品是《反方向的鐘》、《晴天》和《擱淺》。而我最喜歡的女歌手則是張韶涵，喜歡他獨特的唱腔，和堅毅的個性，喜歡的作品是《親愛的，那不是愛情》、《手心的太陽》和《有形的翅膀》。或許是偶像影響了我，讓我對唱歌充滿了熱情，雖然我不是很懂音樂，也沒學過任何樂器，但這無法阻擋我對音樂的熱忱，希望有天也可以唱得跟偶像一樣厲害，也或許是受爸爸的影響，雖然他喜歡聽的是台語老歌，但喜歡聽歌的心卻是一樣的，而且我的爸爸唱歌超好聽，我應該有遺傳到一部分。因為每個月上學的通勤費用太高，所以會買月票，比較划算，剛好喜歡出去玩的我，常常會帶著月票到處搭車旅遊，探索雙北好玩的風景名勝，而我也是一個喜歡拍照的人，所以也會特別找景點拍照。</p>
 			<p><a href="#begin">回到最前</a></p>
 		</section>
