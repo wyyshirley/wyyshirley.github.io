@@ -19,14 +19,13 @@
 				<div class="collapse navbar-collapse" id="navbar1">
 					<ul class="navbar-nav me-auto">
 						<li class="nav-item active"><a class="nav-link" href="#family">簡介</a><li>
-						<li class="nav-item"><a class="nav-link" href="#school">求學歷程</a></li>
-						<li class="nav-item"><a class="nav-link" href="#work">打工經歷</a></li>
+						<li class="nav-item"><a class="nav-link" href="#school">學歷與經歷</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">生活</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="#China life">童年</a>
-								<a class="dropdown-item" href="#high school">高中生活</a>
-								<a class="dropdown-item" href="#collage">大學生活</a>
+								<a class="dropdown-item" href="#childhood">童年</a>
+								<a class="dropdown-item" href="#high school">高中</a>
+								<a class="dropdown-item" href="#collage">大學</a>
 							</div>
 						</li>
 					</ul>
@@ -77,27 +76,73 @@
 						<div class="card-body">
 							<h5 class="card-title">簡介</h5>
 							<p class="card-text">出生於台北市，有一個姊姊，媽媽是福建人。生日9/2，處女座。名字中的「顗」字不常見，常被唸錯，最常聽到大家叫我「凱」媛。其他綽號還有「小不點」、「芋圓」。</p>
-							<p><a href="#begin">回到最前</a></p>
+							<p>
+								<a class="btn btn-primary" data-bs-toggle="collapse" href="#sing">喜歡唱歌</a>
+							</p>
+							<div class="collapse" id="sing">
+								<div class="card card-body">
+									<img src="唱歌.jpg" class="img-thumbnail " width="240" style="float: right;" >
+									超超超級喜歡唱歌♡
+								</div>
+							</div>
+							<p>
+								<a class="btn btn-primary" data-bs-toggle="collapse" href="#play">愛玩&拍</a>
+							</p>
+							<div class="collapse" id="play">
+								<div class="card card-body">
+									<img src="玩.jpg" class="img-thumbnail " width="240" style="float: right;" >
+									喜歡出去玩拍好看的照片
+								</div>
+							</div>
+							<p><a href="#begin">回到最前</a></p>	
 						</div>
 					</div>
 				</div>
+				
 				<div id="school" class="col-sm-6">
 					<div class="card">
 						<img class="card-img-top" src="市長獎.jpg">
 						<div class="card-body">
 							<h5 class="card-title">學歷與經歷</h5>
 							<p class="card-text">畢業於台北市立松山高中，現就讀世新大學資訊傳播學系一年級。小學一年級及六年級時當選為（台北）市模範生，畢業時拿（台北）市長獎。</p>
+							<p>
+								<a class="btn btn-primary" data-bs-toggle="collapse" href="#trophy">獎盃</a>
+							</p>
+							<div class="collapse" id="trophy">
+								<div class="card card-body">
+									<img src="獎盃.jpg" class="img-thumbnail " width="240" style="float: right;" >
+									柯市長(左)與郝市長(右)的模範生獎盃
+								</div>
+							</div>
 							<p><a href="#begin">回到最前</a></p>
 						</div>
 					</div>
 				</div>
 				
-				<div id="China life" class="col-sm-6">
+				<div id="childhood" class="col-sm-6">
 					<div class="card">
 						<img class="card-img-top" src="出海.jpg">
 						<div class="card-body">
 							<h5 class="card-title">童年</h5>
 							<p class="card-text">小時候暑假都會回外婆家（福建）生活一陣子，比起台北城市的喧囂，我更喜歡鄉下樸實無華的生活，雖然生活上確實有許多不便，也讓我這個都市小孩很不習慣，但是和表姊表妹相處讓我擁有許多刻骨銘心的回憶，也為我的童年添增了不少色彩。以前都是搭飛機，但最近幾次回去都是搭貨輪，只要睡一覺就可以從基隆到廈門。但疫情也影響了我們大家的生活，已經很多年沒有回去了，也很擔心親戚們的健康狀態。</p>
+							<p>
+								<a class="btn btn-primary" data-bs-toggle="collapse" href="#child">小時候</a>
+							</p>
+							<div class="collapse" id="child">
+								<div class="card card-body">
+									<img src="以前.jpg" class="img-thumbnail " width="240" style="float: right;" >
+									小時候超可愛的吧
+								</div>
+							</div>
+							<p>
+								<a class="btn btn-primary" data-bs-toggle="collapse" href="#growup">長大了</a>
+							</p>
+							<div class="collapse" id="growup">
+								<div class="card card-body">
+									<img src="長大.jpg" class="img-thumbnail " width="240" style="float: right;" >
+									女大十八變
+								</div>
+							</div>
 							<p><a href="#begin">回到最前</a></p>
 						</div>
 					</div>
@@ -108,41 +153,49 @@
 						<div class="card-body">
 							<h5 class="card-title">30th松高</h5>
 							<p class="card-text">高一是流行音樂社，高二是網球社。因為就讀松山高中，讓我愛上看HBL，那種奮不顧身想要贏球的心、那種熱血、那種一生只有一次的感覺，只專屬於HBL。因為疫情，我們這屆沒有舉辦畢業旅行跟畢業典禮，連學校的特色傳統柳絮紛飛也停辦，還好每年都會舉辦，所以在畢業以前已經看過且震撼過兩次了，但總覺得少了屬於自己畢業的那次還是留下了許多遺憾，還沒來的及跟老師、同學們告別就無聲無息的畢業了。</p>
+							<p>
+								<a class="btn btn-primary" data-bs-toggle="collapse" href="#concert">舞會</a>
+							</p>
+							<div class="collapse" id="concert">
+								<div class="card card-body">
+									<img src="舞會.jpg" class="img-thumbnail " width="240" style="float: right;" >
+									和同學一起去參加舞會
+								</div>
+							</div>
+							<p>
+								<a class="btn btn-primary" data-bs-toggle="collapse" href="#graduation">柳絮紛飛</a>
+							</p>
+							<div class="collapse" id="graduation">
+								<div class="card card-body">
+									<img src="柳絮紛飛.jpg" class="img-thumbnail " width="240" style="float: right;" >
+									高二那年的柳絮紛飛
+								</div>
+							</div>
+							<p><a href="#begin">回到最前</a></p>
+						</div>
+					</div>
+				</div>
+				<div id="high school" class="col-sm-6">
+					<div class="card">
+						<img class="card-img-top" src="小時候.jpg">
+						<div class="card-body">
+							<h5 class="card-title">求學歷程</h5>
+							<p class="card-text">從小就讀以升學率著名的中正區，在小學就發現了我對數學的熱情，也許是因為其他科目太爛，唯獨在寫數學時會相對快樂。國中時就讀明星國中－－中正國中，考試的難度和同儕的競爭讓我壓力很大，當時的成績也只算是中上程度。到了升國三的暑假，為了考上好高中，我參加了補習班的黑馬衝刺營，每天不是考試就是寫題本。在會考時些微失誤，勉強擠進第四志願松山高中。因忙碌的生活，我也開始會在課堂上睡覺，漸漸變得不太愛念書了，成績開始直線下滑，而那時候的我才發現自己其實很討厭讀書。因學測成績不是很理想，於是我選擇了繁星這條升學管道，最後我錄取了資訊傳播學系。</p>
+							<p><a href="#begin">回到最前</a></p>
+						</div>
+					</div>
+				</div>
+				<div id="collage" class="col-sm-6">
+					<div class="card">
+						<img class="card-img-top" src="大學.jpg">
+						<div class="card-body">
+							<h5 class="card-title">大學生活</h5>
+							<p class="card-text">我的大學生活其實跟高中沒什麼差別，因為沒有到外縣市讀書，所以一樣也是每天通勤上學，放學回家，只是排課比較自由而已。但因為通勤時間很長大約要一小時，害我常常抓不準時間，課間也沒辦法回家休息。大一上時，我參加了系排，而下學期決定重返對唱歌的熱情，加入了詞曲創作社學唱歌。自從繁星放榜後，我就開始在補習班當工讀生，希望能藉由打工讓自己變得更加獨立。當我領到人生中第一份薪水的時候真的很感動，有種自己養自己的感覺。這份工作也持續到了大學，半工半讀確實很累，但我還是繼續堅持著，如今也有一年的資歷了。</p>
 							<p><a href="#begin">回到最前</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</main>	
-		<section id="school">
-			<h2><b>求學歷程：</b></h2>
-			<p>  我從小就讀升學率極高的學區－－中正區，幼稚園時讀東門附幼的蜜蜂班，從小活潑好動的個性也讓我發現我的運動細胞在女生裡面算是不錯的，喜歡打球跟跑步，但個子矮小，體力也比較差。國小就讀東門國小，從小學一年級開始補美語，但當時覺得美語幫不太上課業上的英文，所以只補到小學三年級。在小學時，發現了我對數學的熱情，也許是因為其他科目太爛，唯獨在寫數學時會相對快樂，在班上的數學成績也是名列前茅的。小學六年裡，我很認真讀書，獲選兩次市模範生，在班上也常常拿第一名，畢業時拿到柯文哲頒給我的市長獎。國中時我就讀明星國中－－中正國中，以林志玲和極高的升學率著稱，考試的難度和同儕的競爭讓我讀書讀得很辛苦，當時的成績也只能算是中上的程度，全校設有金銀銅榜，校排前五十名是金榜，五十一名到一百名是銀榜，一百零一名到一百五十名是銅榜，國中三年以來我最好的排名是一百零一名，差一點點就可以擺脫銅榜的命運，還記得我那時候超不甘心的。國一國二的時候其實還沒有讀的很拚，到了升國三的那個暑假，我開始覺悟了，發現身邊的同學都開始下定決心念書，才知道我已經沒有退路了，為了考上一所好高中，我參加了補習班開的黑馬衝刺營，整個暑假和補習班的同學們一起努力奮鬥，每天不是考試就是寫題本。當時模擬考我都考得不錯，落點大概在第三志願中山女中附近，卻在會考時失誤，勉強擠進第四志願松山高中。剛升上高一的時候，還算認真準備考試，但後來漸漸開始忙於社團與課外活動，也變得愈來愈叛逆。喜歡唱歌的我在高一時加入了流行音樂社，玩社團玩得很快樂也在社團裡交到不少朋友，但後來發現在社團裡並沒有真正學到唱歌的技巧，於是高二我加入網球社，那時候的我對社團已經沒什麼憧憬了，想說挑一個輕鬆一點的混學分。因忙碌的生活，我也學壞開始會在課堂上睡覺，漸漸變得不太愛念書了，成績開始直線下滑，而那時候的我才真正認識我自己，發現我其實很討厭讀書。高二下開始我為了考學測而發憤讀書，可最後成績還是不太理想，於是我選擇了另一條升學管道－－繁星，僥倖的我在校成績為50%，在無人競爭的情況下我獲得了本校繁星世新的資格，那時的我第一志願是廣電系，因為還沒有對未來有想法，所以後面隨便亂排序，只是想讀傳播而已。繁星放榜後，我錄取了我排的第七志願－－資訊傳播學系。</p>
-			<p><a href="#begin">回到最前</a></p>
-		</section>
-		
-		<section id="high school">
-			<h2><b>高中生活：</b></h2>
-			<p>   松山高中是HBL的常勝軍，有比賽的時候，都可以去當加油隊，在我高一去現場加油一次後，我完全愛上HBL，那種奮不顧身單純只想要贏球的心，那種熱血，充斥在整座體育館裡，贏球時很替球員們開心，輸了也會跟著難過，那種一生只有一次的感覺，只專屬於HBL。真的很高興因為讀松山高中而喜歡上看HBL，有一支能支持一輩子的隊伍讓我很高興。疫情影響了我們的青春回憶，我們這一屆尤其不幸，沒有舉辦畢業旅行，畢業典禮，連學校的特色傳統柳絮紛飛也停辦，且HBL高中三年來都沒有進過四強，於是我們稱我們自己為松山高中30屆魔咒。還好每年都會舉辦柳絮紛飛，所以在畢業以前已經看過且震撼過兩次了，但總覺得少了屬於自己畢業的那次還是留下了許多遺憾，還沒來的及跟老師、同學們告別就無聲無息的畢業了。</p>
-			<p><a href="#begin">回到最前</a></p>
-		</section>
-		
-		<section id="work">
-			<h2><b>打工經歷：</b></h2>
-			<p>    自從繁星放榜後，就收到之前補的補習班在找輔導老師的訊息，那時的我想說繁星放榜後空閒時間很多，也想自己去賺點錢見見市面，畢竟都大學了，不該再跟父母拿錢了，於是我成為了飛哥英文國中部的輔導老師。剛進入一個新環境時的我總是笨手笨腳的，什麼都不會也老是被主管罵，雖然我常常有一股衝動想跟主管遞出辭呈，但想了想也覺得這是人生中的一種歷練，於是我常常鼓勵自己，硬撐到了現在，當我領到人生中第一份薪水的時候真的滿感動的，有種獨立自主的感覺。中間有段期間疫情很嚴重，那時有一半的同事都選擇辭職了，但我還是繼續去工作，因為我總覺得悶在家裡很難受，且沒工作就沒收入了。這份工作也持續到了大學，半工半讀確實很累，但我還是繼續堅持著，如今也有一年的資歷了。</p>
-			<p><a href="#begin">回到最前</a></p>
-		</section>
-		
-		<section id="collage">
-			<h2><b>大學生活：</b></h2>
-			<p>    我的大學生活其實跟高中沒什麼差別，因為沒有到外縣市讀書，所以一樣也是每天通勤上學，放學回家，只是排課比較自由而已。但因為通勤時間很長大約一小時，導致我通勤得滿辛苦的，課間時間也沒辦法回家休息。大一上時，我參加了系排，每週練習兩天晚上，但因為家住太遠的原因，每次回到家都太晚，於是下學期我就退出了，而決定重返我對唱歌的熱情，加入了詞曲創作社。</p>
-			<p><a href="#begin">回到最前</a></p>
-		</section>
-		
-		<section id="hobby">
-			<h2><b>興趣愛好：</b></h2>
-			<p>    我從小就很喜歡追劇，從小時候的三立華劇到韓劇以及陸劇我都喜歡看，特別鍾愛仙俠古裝劇，我最喜歡的劇是《陳情令》、《青雲志》、《花千骨》。我從小時候就是追星族，還記得那時候最愛的偶像團體是TFBOYS，但現在我最喜歡的明星是周杰倫，被他做音樂的熱忱以及獨特的曲風和咬字所深深吸引，就像大家所說的一樣，周杰倫代表了我的青春，只要一響起他的歌曲前奏，許多回憶都會湧上心頭。而我最喜歡他的作品是《反方向的鐘》、《晴天》和《擱淺》。而我最喜歡的女歌手則是張韶涵，喜歡他獨特的唱腔，和堅毅的個性，喜歡的作品是《親愛的，那不是愛情》、《手心的太陽》和《有形的翅膀》。或許是偶像影響了我，讓我對唱歌充滿了熱情，雖然我不是很懂音樂，也沒學過任何樂器，但這無法阻擋我對音樂的熱忱，希望有天也可以唱得跟偶像一樣厲害，也或許是受爸爸的影響，雖然他喜歡聽的是台語老歌，但喜歡聽歌的心卻是一樣的，而且我的爸爸唱歌超好聽，我應該有遺傳到一部分。因為每個月上學的通勤費用太高，所以會買月票，比較划算，剛好喜歡出去玩的我，常常會帶著月票到處搭車旅遊，探索雙北好玩的風景名勝，而我也是一個喜歡拍照的人，所以也會特別找景點拍照。</p>
-			<p><a href="#begin">回到最前</a></p>
-		</section>
-		
+		</main>
 	</body>
 </html>
